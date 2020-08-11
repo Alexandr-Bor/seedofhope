@@ -171,11 +171,14 @@ input[type="submit"] {
   letter-spacing: 1px;
   border: 1px;
   text-transform:uppercase;
+}
+button,
+//input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  .opacity(0.75);
+  .transition(all 300ms ease-in-out);
 
-  &:hover {
-    .opacity(0.75);
-    .transition(all 300ms ease-in-out);
-  }
 }
 input[type=text],
 input[type=email],

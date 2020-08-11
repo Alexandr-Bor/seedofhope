@@ -48,13 +48,13 @@
     </div>
 
 
-    <section class="breadcrumbs_section">
-        <div class="breadcrumbs_line">
-            <div class="left_line_bread"></div>
-            <?php echo ale_get_breadcrumbs(); ?>
-            <div class="right_line_bread"></div>
-        </div>
-    </section>
+<!--    <section class="breadcrumbs_section">-->
+<!--        <div class="breadcrumbs_line">-->
+<!--            <div class="left_line_bread"></div>-->
+<!--            --><?php //echo ale_get_breadcrumbs(); ?>
+<!--            <div class="right_line_bread"></div>-->
+<!--        </div>-->
+<!--    </section>-->
 
 
 
