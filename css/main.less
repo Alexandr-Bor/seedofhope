@@ -62,9 +62,10 @@ body{
   margin: 0 auto;
 }
 .header_box {
-  .header_top_line {
+  #header_top_line {
     display: flex;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
@@ -72,6 +73,8 @@ body{
     box-sizing: border-box;
     position: fixed;
     z-index: 999;
+    top: 0;
+    .transition( top 300ms ease-in-out );
 
     .logo_container {
       display: flex;
