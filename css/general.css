@@ -1018,7 +1018,6 @@ hr {
   content: "";
   width: 16px;
   height: 34px;
-  background: url(images/li.png) center center no-repeat;
   display: block;
   float: left;
   margin-right: 15px;
@@ -1027,7 +1026,6 @@ hr {
   content: "";
   width: 16px;
   height: 34px;
-  background: url(images/li.png) center center no-repeat;
   display: block;
   float: left;
   margin-right: 15px;

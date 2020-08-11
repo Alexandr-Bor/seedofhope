@@ -699,7 +699,7 @@ function ale_metaboxes($meta_boxes) {
         )
     );
 
-    /* template-contact.php */
+    /* template-contacts.php */
     $meta_boxes[] = array(
         'id'         => 'contact_settings_metabox',
         'title'      => esc_html__('Contact Settings','gardener'),
