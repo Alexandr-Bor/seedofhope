@@ -49,7 +49,7 @@ get_header();
                 <h2 class="leader_mission_title"><?php esc_attr_e( ale_get_meta( 'mission_leader_box_title', 'seedofhope' )); ?></h2>
             <?php } ?>
 
-            <div class="leader_box">
+            <div class="leader_box" id="leader_box_id">
                 <?php if ( ale_get_meta( 'mission_leader_image' )) { ?>
                     <div class="img_box">
                         <img src="<?php echo esc_url( ale_get_meta( 'mission_leader_image' )); ?>" alt="leader">

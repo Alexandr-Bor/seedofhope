@@ -9,7 +9,7 @@
 <body <?php body_class(); ?>>
 
 <header class="header_box">
-    <div class="header_top_line">
+    <div id="header_top_line">
 
         <div class="logo_container">
             <div class="logo">
