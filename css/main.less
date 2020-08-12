@@ -215,7 +215,7 @@ body{
   }
 
   .leader_mission_container {
-    margin-bottom: 350px;
+    margin-bottom: 250px;
     
     h2.leader_mission_title {
       .font_cormorant();
@@ -279,7 +279,7 @@ body{
     .work_item_container-3,
     .work_item_container-4,
     .work_item_container-5 {
-      margin-bottom: 170px;
+      //margin-bottom: 30px;
 
       .number {
         display: block;
@@ -347,6 +347,9 @@ body{
     }
 
     .work_item_container-2 {
+      margin-bottom: 170px;
+      margin-top: -90px;
+
       .content_of_item {
         .left { width: 40%;}
         .right {
@@ -388,23 +391,29 @@ body{
     }
 
     .work_item_container-4 {
+      padding-bottom: 160px;
+
       .content_of_item {
         .right {
           .box_for_images {
+            position: relative;
+
             .img_1 img {
               width: 100%;
             }
           }
+        }
+        .left {
+          margin-bottom: 65px;
         }
       }
     }
 
     .work_item_container-4,
     .work_item_container-5 {
-      padding-top: 400px;
+      padding-top: 220px;
       background: @color_footer;
       margin-bottom: 0;
-      padding-bottom: 389px;
 
       .number { color: #fff; &:before, &:after { background: #fff;}}
       h3.active_work_title, .active_work_subtitle, .content, .activity_work_button_link { color: #fff;}
@@ -417,7 +426,6 @@ body{
         .left {
           width: 100%;
           text-align: center;
-          margin-bottom: 65px;
           padding-right: 0;
 
           .content p {
@@ -427,7 +435,6 @@ body{
         .right {
           width: 100%;
           .box_for_images {
-            position: relative;
             .img_3 {
               position: absolute; top: 0; left: 0;
               max-width: 40%;
@@ -441,6 +448,7 @@ body{
 
     .work_item_container-5 {
       padding-top: 0;
+      padding-bottom: 230px;
 
       .img_2 {
         position: absolute;
@@ -450,16 +458,21 @@ body{
         margin-top: -60px;
         margin-right: 50px;
       }
-      .content_of_item .right .box_for_images .img_3 {
-        max-width: 35%;
-        margin-top: 100px;
-        margin-left: 0;
+      .content_of_item .right {
+        position: relative;
+
+        .box_for_images .img_3 {
+          max-width: 35%;
+          margin-top: 0;
+          margin-left: 0;
+        }
       }
       .box_for_images {
         padding-left: 160px;
+        position: unset!important;
       }
       .bottom_part {
-        margin-top: 200px;
+        margin-top: 100px;
         .content {
           padding: 0 150px;
           box-sizing: border-box;

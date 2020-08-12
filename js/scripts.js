@@ -25,14 +25,14 @@ jQuery(function($) {
         {
             from: 'el-top = vp-bottom - 100px',
             to: 'el-bottom = vp-bottom - 100px',
-            cssFrom:{opacity:'.0'},
-            cssTo:{opacity:'1'}
+            cssFrom:{ opacity :'.0'},
+            cssTo:{ opacity :'1'}
         },
         {
             from: 'el-top = vp-top + 100px',
             to:   'el-bottom = vp-top + 100px',
-            cssFrom:{opacity:'1'},
-            cssTo:{opacity:'.0'}
+            cssFrom:{ opacity :'1'},
+            cssTo:{ opacity :'.0'}
         }
     ]);
     $('.leader_mission_title').scroolly([
@@ -47,44 +47,63 @@ jQuery(function($) {
         {
             from: 'el-top = vp-center',
             to: 'el-top = vp-top',
-            cssFrom:{'position':'relative', 'left':'1px'},
-            cssTo:{'position':'relative', 'left':'1000px'},
+            cssFrom:{ position :'relative', left :'1px'},
+            cssTo:{ position :'relative', left :'1000px'},
         },
     ]);
-    // .site_container .active_work_container .work_item_container-1 .content_of_item .right img
-    // .site_container .active_work_container .work_item_container-2 .content_of_item .right img
-    // .site_container .active_work_container .work_item_container-3 .content_of_item .right img
-    // .site_container .active_work_container .work_item_container-4 .content_of_item .right img
-    // .site_container .active_work_container .work_item_container-5 .content_of_item .right img
 
-    $('.site_container .active_work_container .work_item_container-1 .content_of_item .right, .site_container .active_work_container .work_item_container-3 .content_of_item .right, .site_container .active_work_container .work_item_container-4 .content_of_item .right .img_3').scroolly([
+    $('.site_container .active_work_container .work_item_container-1 .content_of_item .right').scroolly([
         {
             from: 'con-top = vp-bottom',
             to: 'con-bottom = vp-top',
-            cssFrom:{'position':'relative', 'top':'-1px'},
-            cssTo:{'position':'relative', 'top':'-300px'},
+            cssFrom:{'position':'relative', top :'-1px'},
+            cssTo:{'position':'relative', top :'-200px'},
         },
     ]);
     $('.site_container .active_work_container .work_item_container-2 .content_of_item .right').scroolly([
         {
             from: 'el-top = vp-bottom - 100px',
             to: 'el-bottom = vp-bottom - 100px',
-            cssFrom:{opacity:'.1', 'transform':'scale(0.9)'},
-            cssTo:{opacity:'1', 'transform':'scale(1.1)'}
+            cssFrom:{ opacity :'.1', 'transform':'scale(0.9)'},
+            cssTo:{ opacity :'1', 'transform':'scale(1.1)'}
         },
         {
             from: 'el-top = vp-top + 100px',
             to:   'el-bottom = vp-top + 100px',
-            cssFrom:{opacity:'1'},
-            cssTo:{opacity:'.2'}
+            cssFrom:{ opacity :'1'},
+            cssTo:{ opacity :'.2'}
         }
     ]);
-    $('.site_container .active_work_container .work_item_container-2 .number').scroolly([
+    $('.site_container .active_work_container .work_item_container-3 .content_of_item .right').scroolly([
         {
             from: 'con-top = vp-bottom',
             to: 'con-bottom = vp-top',
-            cssFrom:{'margin-top':'-1px'},
-            cssTo:{'margin-top':'-300px'},
+            cssFrom:{ position :'relative', top :'220px'},
+            cssTo:{ position :'relative', top :'1px'},
+        },
+    ]);
+    $('.site_container .active_work_container .work_item_container-4 .content_of_item .right .img_3').scroolly([
+        {
+            from: 'con-top = vp-bottom',
+            to: 'con-bottom = vp-top',
+            cssFrom:{ top :'-1px'},
+            cssTo:{ top :'-300px'},
+        },
+    ]);
+    $('.site_container .active_work_container .work_item_container-5 .content_of_item .right .img_2').scroolly([
+        {
+            from: 'con-top = vp-bottom',
+            to: 'con-bottom = vp-top',
+            cssFrom:{ top :'520px'},
+            cssTo:{ top:'100px'},
+        },
+    ]);
+    $('.site_container .active_work_container .work_item_container-5 .content_of_item .right .img_3').scroolly([
+        {
+            from: 'con-top = vp-bottom',
+            to: 'con-bottom = vp-top',
+            cssFrom:{ position : 'absolute', top :'100px'},
+            cssTo:{ position : 'absolute', top :'1px'},
         },
     ]);
 
