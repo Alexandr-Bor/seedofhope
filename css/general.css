@@ -1913,6 +1913,7 @@ body {
 .site_container .leader_mission_container .leader_box .img_box img {
   max-width: 100%;
   height: auto;
+  opacity: 0;
 }
 .site_container .leader_mission_container .leader_box .description_box {
   width: 47%;
@@ -2117,6 +2118,8 @@ body {
 }
 .site_container .active_work_container .work_item_container-2 .content_of_item .right {
   width: 60%;
+  opacity: 0;
+  transform: scale(0.9);
 }
 .site_container .active_work_container .work_item_container-3 {
   padding-top: 100px;

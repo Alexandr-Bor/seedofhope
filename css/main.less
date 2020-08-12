@@ -239,10 +239,10 @@ body{
       display: flex;
       .img_box {
         width: 53%;
-        
         img {
           max-width: 100%;
           height: auto;
+          opacity: 0;
         }
       }
       .description_box {                                            
@@ -349,7 +349,11 @@ body{
     .work_item_container-2 {
       .content_of_item {
         .left { width: 40%;}
-        .right { width: 60%;}
+        .right {
+          width: 60%;
+          opacity: 0;
+          transform: scale(0.9);
+        }
       }
     }
 

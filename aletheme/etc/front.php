@@ -46,6 +46,7 @@ function ale_enqueue_scripts() {
     wp_register_script( 'slick', ALETHEME_THEME_URL . '/js/libs/slick.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     wp_register_script( 'venobox', ALETHEME_THEME_URL . '/js/libs/venobox.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     //wp_register_script( 'masonry', ALETHEME_THEME_URL . '/js/libs/jquery.masonry.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
+    wp_register_script( 'scroolly', ALETHEME_THEME_URL . '/js/libs/jquery.scroolly.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
 
 	//Custom JS Code
 	wp_register_script( 'ale-scripts', ALETHEME_THEME_URL . '/js/scripts.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
@@ -55,6 +56,7 @@ function ale_enqueue_scripts() {
 	wp_enqueue_script( 'html5-shim' );
 	wp_script_add_data( 'html5-shim', 'conditional', 'lt IE 9' );
 
+	wp_enqueue_script( 'scroolly' );
 
 	wp_enqueue_script( 'ale-scripts' );
 
