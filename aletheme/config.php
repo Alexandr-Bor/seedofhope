@@ -437,6 +437,53 @@ function ale_metaboxes($meta_boxes) {
             ),
         )
     );
+	/* template-homepage.php  SLIDER BOX*/
+	$meta_boxes[] = array(
+		'id'         => 'home_settings_metabox_slider_box',
+		'title'      => esc_html__('Slider Settings', 'gardener'),
+		'pages'      => array( 'page', ), // Post type
+		'context'    => 'normal',
+		'priority'   => 'high',
+		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-homepage.php'), ), // Specific post templates to display this metabox
+		'show_names' => true, // Show field names on the left
+		'fields' => array(
+			array(
+				'name' => esc_html__('Slider Image 1','gardener'),
+				'desc' => esc_html__('Upload here image. Recommended aspect ratio 1.6: 1 (16:10)', 'gardener'),
+				'id'   => $prefix . 'slider_img_1',
+				'std'  => '',
+				'type'    => 'file',
+			),
+			array(
+				'name' => esc_html__('Slider Image 2','gardener'),
+				'desc' => esc_html__('Upload here image. Recommended aspect ratio 1.6: 1 (16:10)', 'gardener'),
+				'id'   => $prefix . 'slider_img_2',
+				'std'  => '',
+				'type'    => 'file',
+			),
+			array(
+				'name' => esc_html__('Slider Image 3','gardener'),
+				'desc' => esc_html__('Upload here image. Recommended aspect ratio 1.6: 1 (16:10)', 'gardener'),
+				'id'   => $prefix . 'slider_img_3',
+				'std'  => '',
+				'type'    => 'file',
+			),
+			array(
+				'name' => esc_html__('Slider Image 4','gardener'),
+				'desc' => esc_html__('Upload here image. Recommended aspect ratio 1.6: 1 (16:10)', 'gardener'),
+				'id'   => $prefix . 'slider_img_4',
+				'std'  => '',
+				'type'    => 'file',
+			),
+			array(
+				'name' => esc_html__('Slider Image 5','gardener'),
+				'desc' => esc_html__('Upload here image. Recommended aspect ratio 1.6: 1 (16:10)', 'gardener'),
+				'id'   => $prefix . 'slider_img_5',
+				'std'  => '',
+				'type'    => 'file',
+			),
+		)
+	);
 
     /* template-about.php */
     $meta_boxes[] = array(

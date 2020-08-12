@@ -9,18 +9,31 @@ get_header();
     <div class="home_header_container">
 
         <div class="kapi_slick_header">
-            <div class="img_box">
-                <img src="<?php echo get_template_directory_uri(). '\css\images\01.jpg'; ?>" alt="">
-            </div>
-            <div class="img_box">
-                <img src="<?php echo get_template_directory_uri(). '\css\images\05.jpg'; ?>" alt="">
-            </div>
-            <div class="img_box">
-                <img src="<?php echo get_template_directory_uri(). '\css\images\08.jpg'; ?>" alt="">
-            </div>
-            <div class="img_box">
-                <img src="<?php echo get_template_directory_uri(). '\css\images\11.jpg'; ?>" alt="">
-            </div>
+            <?php if ( ale_get_meta( 'slider_img_1') ) { ?>
+                <div class="img_box">
+                    <img src="<?php echo esc_url( ale_get_meta( 'slider_img_1')); ?>" alt="">
+                </div>
+            <?php } ?>
+            <?php if ( ale_get_meta( 'slider_img_2') ) { ?>
+                <div class="img_box">
+                    <img src="<?php echo esc_url( ale_get_meta( 'slider_img_2')); ?>" alt="">
+                </div>
+            <?php } ?>
+            <?php if ( ale_get_meta( 'slider_img_3') ) { ?>
+                <div class="img_box">
+                    <img src="<?php echo esc_url( ale_get_meta( 'slider_img_3')); ?>" alt="">
+                </div>
+            <?php } ?>
+            <?php if ( ale_get_meta( 'slider_img_4') ) { ?>
+                <div class="img_box">
+                    <img src="<?php echo esc_url( ale_get_meta( 'slider_img_4')); ?>" alt="">
+                </div>
+            <?php } ?>
+            <?php if ( ale_get_meta( 'slider_img_5') ) { ?>
+                <div class="img_box">
+                    <img src="<?php echo esc_url( ale_get_meta( 'slider_img_5')); ?>" alt="">
+                </div>
+            <?php } ?>
         </div>
 
         <div class="title_header_box">
