@@ -20,58 +20,75 @@ jQuery(function($) {
         prevScrollpos = currentScrollPos;
     }
 
+    if ( screen.width > 782 ) {
+        $('.leader_mission_title').scroolly([
+            {
+                from: 'con-top = vp-bottom',
+                to: 'con-bottom = vp-top',
+                cssFrom:{'margin-top':'-1px'},
+                cssTo:{'margin-top':'-300px'},
+            }
+        ]);
+    } else {
+        $('.leader_mission_title').css({ 'margin-top' : '-77px', 'margin-bottom' : '100px' });
+    }
 
+    if ( screen.width > 500 ) {
+        $('.site_container .active_work_container .work_item_container-1 .content_of_item .right').scroolly([
+            {
+                from: 'con-top = vp-bottom',
+                to: 'con-bottom = vp-top',
+                cssFrom:{'position':'relative', top :'-1px'},
+                cssTo:{'position':'relative', top :'-200px'},
+            },
+        ]);
+        $('.site_container .active_work_container .work_item_container-4 .content_of_item .right .img_3').scroolly([
+            {
+                from: 'con-top = vp-bottom',
+                to: 'con-bottom = vp-top',
+                cssFrom:{ top :'-1px'},
+                cssTo:{ top :'-300px'},
+            },
+        ]);
+    }
     $('.leader_box .img_box img').scroolly([
         {
             from: 'el-top = vp-bottom - 100px',
             to: 'el-bottom = vp-bottom - 100px',
-            cssFrom:{ opacity :'.0'},
+            cssFrom:{ opacity :'0.1'},
             cssTo:{ opacity :'1'}
         },
         {
             from: 'el-top = vp-top + 100px',
             to:   'el-bottom = vp-top + 100px',
             cssFrom:{ opacity :'1'},
-            cssTo:{ opacity :'.0'}
+            cssTo:{ opacity :'0.1'}
         }
     ]);
-    $('.leader_mission_title').scroolly([
-        {
-            from: 'con-top = vp-bottom',
-            to: 'con-bottom = vp-top',
-            cssFrom:{'margin-top':'-1px'},
-            cssTo:{'margin-top':'-300px'},
-        },
-    ]);
+
+
     $('.description_box .signature').scroolly([
         {
-            from: 'el-top = vp-center',
+            from: 'el-center = vp-center - 280',
             to: 'el-top = vp-top',
             cssFrom:{ position :'relative', left :'1px'},
-            cssTo:{ position :'relative', left :'1000px'},
+            cssTo:{ position :'relative', left :'500px'},
         },
     ]);
 
-    $('.site_container .active_work_container .work_item_container-1 .content_of_item .right').scroolly([
-        {
-            from: 'con-top = vp-bottom',
-            to: 'con-bottom = vp-top',
-            cssFrom:{'position':'relative', top :'-1px'},
-            cssTo:{'position':'relative', top :'-200px'},
-        },
-    ]);
+
     $('.site_container .active_work_container .work_item_container-2 .content_of_item .right').scroolly([
         {
             from: 'el-top = vp-bottom - 100px',
             to: 'el-bottom = vp-bottom - 100px',
-            cssFrom:{ opacity :'.1', 'transform':'scale(0.9)'},
-            cssTo:{ opacity :'1', 'transform':'scale(1.1)'}
+            cssFrom:{ opacity :'0.1'},
+            cssTo:{ opacity :'1'}
         },
         {
             from: 'el-top = vp-top + 100px',
             to:   'el-bottom = vp-top + 100px',
             cssFrom:{ opacity :'1'},
-            cssTo:{ opacity :'.2'}
+            cssTo:{ opacity :'0.1'}
         }
     ]);
     $('.site_container .active_work_container .work_item_container-3 .content_of_item .right').scroolly([
@@ -82,14 +99,7 @@ jQuery(function($) {
             cssTo:{ position :'relative', top :'1px'},
         },
     ]);
-    $('.site_container .active_work_container .work_item_container-4 .content_of_item .right .img_3').scroolly([
-        {
-            from: 'con-top = vp-bottom',
-            to: 'con-bottom = vp-top',
-            cssFrom:{ top :'-1px'},
-            cssTo:{ top :'-300px'},
-        },
-    ]);
+
     $('.site_container .active_work_container .work_item_container-5 .content_of_item .right .img_2').scroolly([
         {
             from: 'con-top = vp-bottom',
