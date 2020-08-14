@@ -94,18 +94,14 @@ get_header(); ?>
             </div>
         </div>
 
-		    <?php $v = strpos( wp_get_referer(), '?success' );
-		    if ( $v != false ) { ?>
-                <div class="success_container">
-                    <div class="text_box">
-                        <span class="text">Ваше сообщение отправлено, спасибо за внимание.</span>
-                        <div class="close_box">
-                            <span class="line1"></span>
-                            <span class="line2"></span>
-                        </div>
-                    </div>
-                </div>
-		    <?php } ?>
+
+        <div class="success_container">
+            <div class="text_box">
+                <span class="text">Ваше сообщение отправлено, спасибо за внимание.</span>
+                <div class="close_box"><span class="line1"></span><span class="line2"></span></div>
+            </div>
+        </div>
+
 
     </section>
 <?php get_footer(); ?>
