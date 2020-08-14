@@ -3,6 +3,8 @@
   * Template name: Contact Template
   * */
 
+
+
 get_header(); ?>
     <section class="site_container">
         <div class="page_heading contacts_top_box_template">
@@ -81,7 +83,6 @@ get_header(); ?>
                         </div>
                     </div>
 
-
                 <?php endwhile; else: ?>
                     <?php get_template_part('partials/notfound')?>
                 <?php endif; ?>
@@ -92,5 +93,19 @@ get_header(); ?>
                 <?php endif; ?>
             </div>
         </div>
+
+		    <?php $v = strpos( wp_get_referer(), '?success' );
+		    if ( $v != false ) { ?>
+                <div class="success_container">
+                    <div class="text_box">
+                        <span class="text">Ваше сообщение отправлено, спасибо за внимание.</span>
+                        <div class="close_box">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                </div>
+		    <?php } ?>
+
     </section>
 <?php get_footer(); ?>

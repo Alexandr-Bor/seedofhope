@@ -122,7 +122,17 @@ jQuery(function($) {
         ]);
     })();
 
-
+    /* Close Succes Conteiner */
+    ( function () {
+        console.log('44');
+        if( $('.success_container').length ){
+            console.log('11');
+            $('.success_container .close_box').on('click', function (e) {
+                $('.success_container').css({'display':'none'});
+                $('body').removeClass('background_fixed');
+            });
+        }
+    })();
 
 
 });
